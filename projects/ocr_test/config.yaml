@@ -1,0 +1,24 @@
+Model:
+    CharSet: [' ', D, '3', E, J, '8', '2', T, V, '5', '1', '6', R, B, S, '7', Z, P,
+        X, A, '9', U, I, W, Q, H, K, '4', F, C, G, Y, L]
+    ImageChannel: 1
+    ImageHeight: 64
+    ImageWidth: -1
+    Word: false
+System:
+    Allow_Ext: [jpg, jpeg, png, bmp]
+    GPU: true
+    GPU_ID: 1
+    Path: /data1/wuyongyu/gpu/dddd_trainer/shuzi_letter_8k/
+    Project: ocr_test
+    Val: 0.03
+Train:
+    BATCH_SIZE: 32
+    CNN: {NAME: ddddocr}
+    DROPOUT: 0.3
+    LR: 0.01
+    OPTIMIZER: SGD
+    SAVE_CHECKPOINTS_STEP: 2000
+    TARGET: {Accuracy: 0.97, Cost: 0.05, Epoch: 20}
+    TEST_BATCH_SIZE: 32
+    TEST_STEP: 1000

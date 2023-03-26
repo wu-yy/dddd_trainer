@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+shuzi_letter_8k/
+
+tengxun_3w_4/
+*.tmp
+
